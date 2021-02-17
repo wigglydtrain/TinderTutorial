@@ -7,23 +7,111 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1990D64225DCA7310062113E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1990D64125DCA7310062113E /* GoogleService-Info.plist */; };
+		2317E971246523F800A78EC4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E970246523F800A78EC4 /* ProfileController.swift */; };
+		2317E9732465270700A78EC4 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E9722465270700A78EC4 /* ProfileCell.swift */; };
+		2317E97524652CA600A78EC4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E97424652CA600A78EC4 /* ProfileViewModel.swift */; };
+		231A097B246F12B000C7EB71 /* SendMessageButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A097A246F12B000C7EB71 /* SendMessageButton.swift */; };
+		231A097D246F12B800C7EB71 /* KeepSwipingButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A097C246F12B800C7EB71 /* KeepSwipingButton.swift */; };
+		231A097F246F3DC300C7EB71 /* MatchViewViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A097E246F3DC300C7EB71 /* MatchViewViewModel.swift */; };
+		231A0983246F4C7E00C7EB71 /* MatchHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A0982246F4C7E00C7EB71 /* MatchHeader.swift */; };
+		231A0985246F4E8800C7EB71 /* MatchCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A0984246F4E8800C7EB71 /* MatchCell.swift */; };
+		231A0987246F50EB00C7EB71 /* Match.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A0986246F50EB00C7EB71 /* Match.swift */; };
+		231A09892472182500C7EB71 /* MatchCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 231A09882472182500C7EB71 /* MatchCellViewModel.swift */; };
 		233CF454245B9AB800B50F6B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF453245B9AB800B50F6B /* AppDelegate.swift */; };
 		233CF456245B9AB800B50F6B /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF455245B9AB800B50F6B /* SceneDelegate.swift */; };
-		233CF458245B9AB800B50F6B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF457245B9AB800B50F6B /* ViewController.swift */; };
 		233CF45B245B9AB800B50F6B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233CF459245B9AB800B50F6B /* Main.storyboard */; };
 		233CF45D245B9ABA00B50F6B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 233CF45C245B9ABA00B50F6B /* Assets.xcassets */; };
 		233CF460245B9ABA00B50F6B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 233CF45E245B9ABA00B50F6B /* LaunchScreen.storyboard */; };
+		233CF46E245B9B4B00B50F6B /* HomeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF46D245B9B4B00B50F6B /* HomeController.swift */; };
+		233CF470245B9CD900B50F6B /* Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF46F245B9CD900B50F6B /* Extensions.swift */; };
+		233CF472245B9D3600B50F6B /* HomeNavigationStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF471245B9D3600B50F6B /* HomeNavigationStackView.swift */; };
+		233CF474245BA17F00B50F6B /* BottomControlsStackView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF473245BA17F00B50F6B /* BottomControlsStackView.swift */; };
+		233CF476245BA5D200B50F6B /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF475245BA5D200B50F6B /* CardView.swift */; };
+		233CF478245C762A00B50F6B /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF477245C762A00B50F6B /* User.swift */; };
+		233CF47A245C76C200B50F6B /* CardViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF479245C76C200B50F6B /* CardViewModel.swift */; };
+		233CF47D245CB50600B50F6B /* LoginController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF47C245CB50600B50F6B /* LoginController.swift */; };
+		233CF47F245CB51000B50F6B /* RegistrationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF47E245CB51000B50F6B /* RegistrationController.swift */; };
+		233CF481245CBB0900B50F6B /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF480245CBB0900B50F6B /* CustomTextField.swift */; };
+		233CF483245CBCF600B50F6B /* AuthButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF482245CBCF600B50F6B /* AuthButton.swift */; };
+		233CF485245CC6FF00B50F6B /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF484245CC6FF00B50F6B /* AuthenticationViewModel.swift */; };
+		233CF489245FDA3D00B50F6B /* AuthService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF488245FDA3D00B50F6B /* AuthService.swift */; };
+		233CF48B245FDA4500B50F6B /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF48A245FDA4500B50F6B /* Service.swift */; };
+		233CF48D245FEB4A00B50F6B /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF48C245FEB4A00B50F6B /* Constants.swift */; };
+		233CF48F2460EE2F00B50F6B /* SettingsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF48E2460EE2F00B50F6B /* SettingsController.swift */; };
+		233CF4912460F0D100B50F6B /* SettingsHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF4902460F0D100B50F6B /* SettingsHeader.swift */; };
+		233CF49324632A7100B50F6B /* SettingsCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF49224632A7100B50F6B /* SettingsCell.swift */; };
+		233CF49524632B1800B50F6B /* SettingsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF49424632B1800B50F6B /* SettingsViewModel.swift */; };
+		233CF4972463DF0800B50F6B /* SettingsFooter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 233CF4962463DF0800B50F6B /* SettingsFooter.swift */; };
+		234679CF2468E74100F53BE2 /* SegmentedBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 234679CE2468E74100F53BE2 /* SegmentedBarView.swift */; };
+		23CC8845246F0570009286C9 /* MatchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23CC8844246F0570009286C9 /* MatchView.swift */; };
+		23E197C72477312700FD20ED /* MessagingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197C62477312700FD20ED /* MessagingService.swift */; };
+		23E197C92477313B00FD20ED /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197C82477313B00FD20ED /* Message.swift */; };
+		23E197CC2477316D00FD20ED /* ConversationCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197CB2477316D00FD20ED /* ConversationCell.swift */; };
+		23E197D02477318C00FD20ED /* CustomInputAccessoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197CD2477318800FD20ED /* CustomInputAccessoryView.swift */; };
+		23E197D12477318C00FD20ED /* MessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197CE2477318A00FD20ED /* MessageCell.swift */; };
+		23E197D22477318C00FD20ED /* InputTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197CF2477318C00FD20ED /* InputTextView.swift */; };
+		23E197D6247731E400FD20ED /* ConversationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197D5247731E400FD20ED /* ConversationViewModel.swift */; };
+		23E197D8247731ED00FD20ED /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197D7247731ED00FD20ED /* ChatViewModel.swift */; };
+		23E197DC2477321100FD20ED /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197DA2477321000FD20ED /* MessagesController.swift */; };
+		23E197DD2477321100FD20ED /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197DB2477321100FD20ED /* ChatController.swift */; };
+		C66142E520512EF820B8D4B5 /* Pods_TinderTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1819DF16E6E9035E323576A4 /* Pods_TinderTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		08B1B3DB8A6B45A6376B72DF /* Pods-TinderTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial.release.xcconfig"; sourceTree = "<group>"; };
+		1819DF16E6E9035E323576A4 /* Pods_TinderTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1990D64125DCA7310062113E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2317E970246523F800A78EC4 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
+		2317E9722465270700A78EC4 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
+		2317E97424652CA600A78EC4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
+		231A097A246F12B000C7EB71 /* SendMessageButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SendMessageButton.swift; sourceTree = "<group>"; };
+		231A097C246F12B800C7EB71 /* KeepSwipingButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeepSwipingButton.swift; sourceTree = "<group>"; };
+		231A097E246F3DC300C7EB71 /* MatchViewViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchViewViewModel.swift; sourceTree = "<group>"; };
+		231A0982246F4C7E00C7EB71 /* MatchHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchHeader.swift; sourceTree = "<group>"; };
+		231A0984246F4E8800C7EB71 /* MatchCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCell.swift; sourceTree = "<group>"; };
+		231A0986246F50EB00C7EB71 /* Match.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Match.swift; sourceTree = "<group>"; };
+		231A09882472182500C7EB71 /* MatchCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchCellViewModel.swift; sourceTree = "<group>"; };
 		233CF450245B9AB800B50F6B /* TinderTutorial.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TinderTutorial.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		233CF453245B9AB800B50F6B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		233CF455245B9AB800B50F6B /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		233CF457245B9AB800B50F6B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		233CF45A245B9AB800B50F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		233CF45C245B9ABA00B50F6B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		233CF45F245B9ABA00B50F6B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		233CF461245B9ABA00B50F6B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		233CF46D245B9B4B00B50F6B /* HomeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeController.swift; sourceTree = "<group>"; };
+		233CF46F245B9CD900B50F6B /* Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Extensions.swift; sourceTree = "<group>"; };
+		233CF471245B9D3600B50F6B /* HomeNavigationStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeNavigationStackView.swift; sourceTree = "<group>"; };
+		233CF473245BA17F00B50F6B /* BottomControlsStackView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BottomControlsStackView.swift; sourceTree = "<group>"; };
+		233CF475245BA5D200B50F6B /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		233CF477245C762A00B50F6B /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		233CF479245C76C200B50F6B /* CardViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardViewModel.swift; sourceTree = "<group>"; };
+		233CF47C245CB50600B50F6B /* LoginController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginController.swift; sourceTree = "<group>"; };
+		233CF47E245CB51000B50F6B /* RegistrationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationController.swift; sourceTree = "<group>"; };
+		233CF480245CBB0900B50F6B /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		233CF482245CBCF600B50F6B /* AuthButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthButton.swift; sourceTree = "<group>"; };
+		233CF484245CC6FF00B50F6B /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		233CF488245FDA3D00B50F6B /* AuthService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthService.swift; sourceTree = "<group>"; };
+		233CF48A245FDA4500B50F6B /* Service.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Service.swift; sourceTree = "<group>"; };
+		233CF48C245FEB4A00B50F6B /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		233CF48E2460EE2F00B50F6B /* SettingsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsController.swift; sourceTree = "<group>"; };
+		233CF4902460F0D100B50F6B /* SettingsHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsHeader.swift; sourceTree = "<group>"; };
+		233CF49224632A7100B50F6B /* SettingsCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsCell.swift; sourceTree = "<group>"; };
+		233CF49424632B1800B50F6B /* SettingsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewModel.swift; sourceTree = "<group>"; };
+		233CF4962463DF0800B50F6B /* SettingsFooter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsFooter.swift; sourceTree = "<group>"; };
+		234679CE2468E74100F53BE2 /* SegmentedBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SegmentedBarView.swift; sourceTree = "<group>"; };
+		23CC8844246F0570009286C9 /* MatchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchView.swift; sourceTree = "<group>"; };
+		23E197C62477312700FD20ED /* MessagingService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessagingService.swift; sourceTree = "<group>"; };
+		23E197C82477313B00FD20ED /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		23E197CB2477316D00FD20ED /* ConversationCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationCell.swift; sourceTree = "<group>"; };
+		23E197CD2477318800FD20ED /* CustomInputAccessoryView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CustomInputAccessoryView.swift; sourceTree = "<group>"; };
+		23E197CE2477318A00FD20ED /* MessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessageCell.swift; sourceTree = "<group>"; };
+		23E197CF2477318C00FD20ED /* InputTextView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InputTextView.swift; sourceTree = "<group>"; };
+		23E197D5247731E400FD20ED /* ConversationViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ConversationViewModel.swift; sourceTree = "<group>"; };
+		23E197D7247731ED00FD20ED /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		23E197DA2477321000FD20ED /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
+		23E197DB2477321100FD20ED /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		F3E938340904A56DBBC8063E /* Pods-TinderTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +119,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				C66142E520512EF820B8D4B5 /* Pods_TinderTutorial.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +131,8 @@
 			children = (
 				233CF452245B9AB800B50F6B /* TinderTutorial */,
 				233CF451245B9AB800B50F6B /* Products */,
+				8418D5EF6B5DB0378B5C3D06 /* Pods */,
+				4B9635B0C9D80FFF202E6508 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,15 +147,186 @@
 		233CF452245B9AB800B50F6B /* TinderTutorial */ = {
 			isa = PBXGroup;
 			children = (
+				233CF46C245B9AD800B50F6B /* Model */,
+				233CF46B245B9AD600B50F6B /* View */,
+				233CF46A245B9AD500B50F6B /* ViewModel */,
+				233CF469245B9AD300B50F6B /* Controller */,
+				233CF468245B9AD100B50F6B /* API */,
+				233CF467245B9ACC00B50F6B /* Utils */,
 				233CF453245B9AB800B50F6B /* AppDelegate.swift */,
 				233CF455245B9AB800B50F6B /* SceneDelegate.swift */,
-				233CF457245B9AB800B50F6B /* ViewController.swift */,
 				233CF459245B9AB800B50F6B /* Main.storyboard */,
 				233CF45C245B9ABA00B50F6B /* Assets.xcassets */,
 				233CF45E245B9ABA00B50F6B /* LaunchScreen.storyboard */,
+				1990D64125DCA7310062113E /* GoogleService-Info.plist */,
 				233CF461245B9ABA00B50F6B /* Info.plist */,
 			);
 			path = TinderTutorial;
+			sourceTree = "<group>";
+		};
+		233CF467245B9ACC00B50F6B /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				233CF46F245B9CD900B50F6B /* Extensions.swift */,
+				233CF48C245FEB4A00B50F6B /* Constants.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		233CF468245B9AD100B50F6B /* API */ = {
+			isa = PBXGroup;
+			children = (
+				233CF488245FDA3D00B50F6B /* AuthService.swift */,
+				233CF48A245FDA4500B50F6B /* Service.swift */,
+				23E197C62477312700FD20ED /* MessagingService.swift */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		233CF469245B9AD300B50F6B /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				23E197D9247731FB00FD20ED /* Messages */,
+				233CF47B245CB4FC00B50F6B /* Authentication */,
+				233CF46D245B9B4B00B50F6B /* HomeController.swift */,
+				233CF48E2460EE2F00B50F6B /* SettingsController.swift */,
+				2317E970246523F800A78EC4 /* ProfileController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		233CF46A245B9AD500B50F6B /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				23E197D4247731AF00FD20ED /* Matches */,
+				23E197D3247731A400FD20ED /* Messages */,
+				233CF479245C76C200B50F6B /* CardViewModel.swift */,
+				233CF484245CC6FF00B50F6B /* AuthenticationViewModel.swift */,
+				233CF49424632B1800B50F6B /* SettingsViewModel.swift */,
+				2317E97424652CA600A78EC4 /* ProfileViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		233CF46B245B9AD600B50F6B /* View */ = {
+			isa = PBXGroup;
+			children = (
+				23E197DF2478411E00FD20ED /* CustomViews */,
+				23E197DE247840E400FD20ED /* Matches */,
+				23E197CA2477315E00FD20ED /* Messages */,
+				233CF4982463DF0C00B50F6B /* Settings */,
+				233CF471245B9D3600B50F6B /* HomeNavigationStackView.swift */,
+				233CF473245BA17F00B50F6B /* BottomControlsStackView.swift */,
+				233CF475245BA5D200B50F6B /* CardView.swift */,
+				2317E9722465270700A78EC4 /* ProfileCell.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		233CF46C245B9AD800B50F6B /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				233CF477245C762A00B50F6B /* User.swift */,
+				231A0986246F50EB00C7EB71 /* Match.swift */,
+				23E197C82477313B00FD20ED /* Message.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		233CF47B245CB4FC00B50F6B /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				233CF47C245CB50600B50F6B /* LoginController.swift */,
+				233CF47E245CB51000B50F6B /* RegistrationController.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		233CF4982463DF0C00B50F6B /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				233CF4902460F0D100B50F6B /* SettingsHeader.swift */,
+				233CF49224632A7100B50F6B /* SettingsCell.swift */,
+				233CF4962463DF0800B50F6B /* SettingsFooter.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		23E197CA2477315E00FD20ED /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				23E197CD2477318800FD20ED /* CustomInputAccessoryView.swift */,
+				23E197CF2477318C00FD20ED /* InputTextView.swift */,
+				23E197CE2477318A00FD20ED /* MessageCell.swift */,
+				23E197CB2477316D00FD20ED /* ConversationCell.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		23E197D3247731A400FD20ED /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				23E197D7247731ED00FD20ED /* ChatViewModel.swift */,
+				23E197D5247731E400FD20ED /* ConversationViewModel.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		23E197D4247731AF00FD20ED /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				231A097E246F3DC300C7EB71 /* MatchViewViewModel.swift */,
+				231A09882472182500C7EB71 /* MatchCellViewModel.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		23E197D9247731FB00FD20ED /* Messages */ = {
+			isa = PBXGroup;
+			children = (
+				23E197DB2477321100FD20ED /* ChatController.swift */,
+				23E197DA2477321000FD20ED /* MessagesController.swift */,
+			);
+			path = Messages;
+			sourceTree = "<group>";
+		};
+		23E197DE247840E400FD20ED /* Matches */ = {
+			isa = PBXGroup;
+			children = (
+				231A0982246F4C7E00C7EB71 /* MatchHeader.swift */,
+				231A0984246F4E8800C7EB71 /* MatchCell.swift */,
+				23CC8844246F0570009286C9 /* MatchView.swift */,
+			);
+			path = Matches;
+			sourceTree = "<group>";
+		};
+		23E197DF2478411E00FD20ED /* CustomViews */ = {
+			isa = PBXGroup;
+			children = (
+				233CF480245CBB0900B50F6B /* CustomTextField.swift */,
+				233CF482245CBCF600B50F6B /* AuthButton.swift */,
+				234679CE2468E74100F53BE2 /* SegmentedBarView.swift */,
+				231A097A246F12B000C7EB71 /* SendMessageButton.swift */,
+				231A097C246F12B800C7EB71 /* KeepSwipingButton.swift */,
+			);
+			path = CustomViews;
+			sourceTree = "<group>";
+		};
+		4B9635B0C9D80FFF202E6508 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1819DF16E6E9035E323576A4 /* Pods_TinderTutorial.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		8418D5EF6B5DB0378B5C3D06 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F3E938340904A56DBBC8063E /* Pods-TinderTutorial.debug.xcconfig */,
+				08B1B3DB8A6B45A6376B72DF /* Pods-TinderTutorial.release.xcconfig */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +336,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 233CF464245B9ABA00B50F6B /* Build configuration list for PBXNativeTarget "TinderTutorial" */;
 			buildPhases = (
+				35529C6B5EE12140452DC22E /* [CP] Check Pods Manifest.lock */,
 				233CF44C245B9AB800B50F6B /* Sources */,
 				233CF44D245B9AB800B50F6B /* Frameworks */,
 				233CF44E245B9AB800B50F6B /* Resources */,
+				495D72DEDC75FE6C7EDF7230 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -126,6 +390,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				233CF460245B9ABA00B50F6B /* LaunchScreen.storyboard in Resources */,
+				1990D64225DCA7310062113E /* GoogleService-Info.plist in Resources */,
 				233CF45D245B9ABA00B50F6B /* Assets.xcassets in Resources */,
 				233CF45B245B9AB800B50F6B /* Main.storyboard in Resources */,
 			);
@@ -133,14 +398,120 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		35529C6B5EE12140452DC22E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TinderTutorial-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		495D72DEDC75FE6C7EDF7230 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
+				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
+				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
+				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
+				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
+				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
+				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		233CF44C245B9AB800B50F6B /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				233CF458245B9AB800B50F6B /* ViewController.swift in Sources */,
+				23E197C72477312700FD20ED /* MessagingService.swift in Sources */,
+				23E197D12477318C00FD20ED /* MessageCell.swift in Sources */,
+				233CF48F2460EE2F00B50F6B /* SettingsController.swift in Sources */,
+				23E197DC2477321100FD20ED /* MessagesController.swift in Sources */,
+				234679CF2468E74100F53BE2 /* SegmentedBarView.swift in Sources */,
+				231A0983246F4C7E00C7EB71 /* MatchHeader.swift in Sources */,
+				233CF476245BA5D200B50F6B /* CardView.swift in Sources */,
+				233CF48D245FEB4A00B50F6B /* Constants.swift in Sources */,
+				23E197DD2477321100FD20ED /* ChatController.swift in Sources */,
+				23E197D6247731E400FD20ED /* ConversationViewModel.swift in Sources */,
+				233CF483245CBCF600B50F6B /* AuthButton.swift in Sources */,
+				233CF485245CC6FF00B50F6B /* AuthenticationViewModel.swift in Sources */,
+				23E197D8247731ED00FD20ED /* ChatViewModel.swift in Sources */,
+				233CF4972463DF0800B50F6B /* SettingsFooter.swift in Sources */,
+				233CF474245BA17F00B50F6B /* BottomControlsStackView.swift in Sources */,
+				231A09892472182500C7EB71 /* MatchCellViewModel.swift in Sources */,
 				233CF454245B9AB800B50F6B /* AppDelegate.swift in Sources */,
 				233CF456245B9AB800B50F6B /* SceneDelegate.swift in Sources */,
+				2317E971246523F800A78EC4 /* ProfileController.swift in Sources */,
+				233CF478245C762A00B50F6B /* User.swift in Sources */,
+				23E197D22477318C00FD20ED /* InputTextView.swift in Sources */,
+				233CF472245B9D3600B50F6B /* HomeNavigationStackView.swift in Sources */,
+				23CC8845246F0570009286C9 /* MatchView.swift in Sources */,
+				233CF47F245CB51000B50F6B /* RegistrationController.swift in Sources */,
+				233CF48B245FDA4500B50F6B /* Service.swift in Sources */,
+				2317E97524652CA600A78EC4 /* ProfileViewModel.swift in Sources */,
+				233CF46E245B9B4B00B50F6B /* HomeController.swift in Sources */,
+				233CF481245CBB0900B50F6B /* CustomTextField.swift in Sources */,
+				231A097F246F3DC300C7EB71 /* MatchViewViewModel.swift in Sources */,
+				233CF49324632A7100B50F6B /* SettingsCell.swift in Sources */,
+				233CF470245B9CD900B50F6B /* Extensions.swift in Sources */,
+				233CF4912460F0D100B50F6B /* SettingsHeader.swift in Sources */,
+				231A0987246F50EB00C7EB71 /* Match.swift in Sources */,
+				23E197C92477313B00FD20ED /* Message.swift in Sources */,
+				233CF489245FDA3D00B50F6B /* AuthService.swift in Sources */,
+				23E197CC2477316D00FD20ED /* ConversationCell.swift in Sources */,
+				233CF47A245C76C200B50F6B /* CardViewModel.swift in Sources */,
+				231A097D246F12B800C7EB71 /* KeepSwipingButton.swift in Sources */,
+				2317E9732465270700A78EC4 /* ProfileCell.swift in Sources */,
+				231A097B246F12B000C7EB71 /* SendMessageButton.swift in Sources */,
+				23E197D02477318C00FD20ED /* CustomInputAccessoryView.swift in Sources */,
+				231A0985246F4E8800C7EB71 /* MatchCell.swift in Sources */,
+				233CF47D245CB50600B50F6B /* LoginController.swift in Sources */,
+				233CF49524632B1800B50F6B /* SettingsViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -282,6 +653,7 @@
 		};
 		233CF465245B9ABA00B50F6B /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F3E938340904A56DBBC8063E /* Pods-TinderTutorial.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -291,7 +663,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephandowless.TinderTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MountOlympus.tindertutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
@@ -300,6 +672,7 @@
 		};
 		233CF466245B9ABA00B50F6B /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 08B1B3DB8A6B45A6376B72DF /* Pods-TinderTutorial.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -309,7 +682,7 @@
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
-				PRODUCT_BUNDLE_IDENTIFIER = com.stephandowless.TinderTutorial;
+				PRODUCT_BUNDLE_IDENTIFIER = com.MountOlympus.tindertutorial;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
