@@ -26,7 +26,7 @@ class CardView: UIView {
     weak var delegate: CardViewDelegate?
     
     private let gradientLayer = CAGradientLayer()
-    private lazy var barStackView = SegmentedBarView(numberOfSegments: viewModel.imageURLs.count)
+  //  private lazy var barStackView = SegmentedBarView(numberOfSegments: //viewModel.imageURLs.count)
     
     let viewModel: CardViewModel
     
@@ -120,7 +120,7 @@ class CardView: UIView {
 //        imageView.image = viewModel.imageToShow
         imageView.sd_setImage(with: viewModel.imageUrl)
         
-        barStackView.setHighlighted(index: viewModel.index)
+    //    barStackView.setHighlighted(index: viewModel.index)
     }
     
     // MARK: - Helpers
@@ -155,9 +155,9 @@ class CardView: UIView {
     }
     
     func configureBarStackView() {
-        addSubview(barStackView)
-        barStackView.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor,
-                            paddingTop: 8, paddingLeft: 8, paddingRight: 8, height: 4)
+     //   addSubview(barStackView)
+//        barStackView.anchor(top: topAnchor, left: leftAnchor, right: rightAnchor,
+  //                          paddingTop: 8, paddingLeft: 8, paddingRight: 8, height: 4)
     }
     
     func configureGradientLayer() {
