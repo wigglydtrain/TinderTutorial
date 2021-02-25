@@ -15,15 +15,15 @@ class RegistrationController: UIViewController {
     
     private var viewModel = RegistrationViewModel()
     weak var delegate: AuthenticationDelegate?
-    
-    private let selectPhotoButton: UIButton = {
-        let button = UIButton(type: .system)
-        button.tintColor = .white
-        button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
-        button.addTarget(self, action: #selector(hanldeSelectPhoto), for: .touchUpInside)
-        button.clipsToBounds = true 
-        return button
-    }()
+//
+//    private let selectPhotoButton: UIButton = {
+//        let button = UIButton(type: .system)
+//        button.tintColor = .white
+//        button.setImage(#imageLiteral(resourceName: "plus_photo"), for: .normal)
+//        button.addTarget(self, action: #selector(hanldeSelectPhoto), for: .touchUpInside)
+//        button.clipsToBounds = true
+//        return button
+//    }()
     
     private let emailTextField = CustomTextField(placeholder: "Email")
     private let fullnameTextField = CustomTextField(placeholder: "Full Name")
@@ -65,13 +65,13 @@ class RegistrationController: UIViewController {
         guard let email = emailTextField.text else { return }
         guard let fullname = fullnameTextField.text else { return }
         guard let password = passwordTextField.text else { return }
-        guard let profileImage = profileImage else { return }
+      //  guard let profileImage = profileImage else { return }
         
         let hud = JGProgressHUD(style: .dark)
         hud.show(in: view)
         
         let credentials = AuthCredentials(email: email, password: password,
-                                          fullname: fullname, profileImage: profileImage)
+                                          fullname: fullname)
 
         AuthService.registerUser(withCredentials: credentials) { error in
             if let error = error {
@@ -122,19 +122,19 @@ class RegistrationController: UIViewController {
     func configureUI() {
         configureGradientLayer()
         
-        view.addSubview(selectPhotoButton)
-        selectPhotoButton.setDimensions(height: 275, width: 275)
-        selectPhotoButton.centerX(inView: view)
-        selectPhotoButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 8)
-        
+//        view.addSubview(selectPhotoButton)
+//        selectPhotoButton.setDimensions(height: 275, width: 275)
+//        selectPhotoButton.centerX(inView: view)
+//        selectPhotoButton.anchor(top: view.safeAreaLayoutGuide.topAnchor, paddingTop: 8)
+//
         let stack = UIStackView(arrangedSubviews: [emailTextField, fullnameTextField,
                                                    passwordTextField, authButton])
         stack.axis = .vertical
         stack.spacing = 16
         
         view.addSubview(stack)
-        stack.anchor(top: selectPhotoButton.bottomAnchor, left: view.leftAnchor,
-                     right: view.rightAnchor, paddingTop: 16, paddingLeft: 32, paddingRight: 32)
+        stack.anchor(top: view.topAnchor, left: view.leftAnchor,
+                     right: view.rightAnchor, paddingTop: 300, paddingLeft: 32, paddingRight: 32)
         
         view.addSubview(goToLoginButton)
         goToLoginButton.anchor(left: view.leftAnchor,
@@ -152,16 +152,16 @@ class RegistrationController: UIViewController {
 // MARK: - UIImagePickerControllerDelegate
 
 extension RegistrationController: UIImagePickerControllerDelegate, UINavigationControllerDelegate {
-    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
-        let image = info[.originalImage] as? UIImage
-        profileImage = image
-        selectPhotoButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
-        selectPhotoButton.layer.borderColor = UIColor(white: 1, alpha: 0.7).cgColor
-        selectPhotoButton.layer.borderWidth = 3
-        selectPhotoButton.layer.cornerRadius = 10
-        selectPhotoButton.imageView?.contentMode = .scaleAspectFill
-        
-        dismiss(animated: true, completion: nil)
-    }
+//    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [UIImagePickerController.InfoKey : Any]) {
+//        let image = info[.originalImage] as? UIImage
+//        profileImage = image
+//        selectPhotoButton.setImage(image?.withRenderingMode(.alwaysOriginal), for: .normal)
+//        selectPhotoButton.layer.borderColor = UIColor(white: 1, alpha: 0.7).cgColor
+//        selectPhotoButton.layer.borderWidth = 3
+//        selectPhotoButton.layer.cornerRadius = 10
+//        selectPhotoButton.imageView?.contentMode = .scaleAspectFill
+//
+//        dismiss(animated: true, completion: nil)
+//    }
     
 }

@@ -3,11 +3,10 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1990D64225DCA7310062113E /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1990D64125DCA7310062113E /* GoogleService-Info.plist */; };
 		2317E971246523F800A78EC4 /* ProfileController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E970246523F800A78EC4 /* ProfileController.swift */; };
 		2317E9732465270700A78EC4 /* ProfileCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E9722465270700A78EC4 /* ProfileCell.swift */; };
 		2317E97524652CA600A78EC4 /* ProfileViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2317E97424652CA600A78EC4 /* ProfileViewModel.swift */; };
@@ -55,13 +54,13 @@
 		23E197D8247731ED00FD20ED /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197D7247731ED00FD20ED /* ChatViewModel.swift */; };
 		23E197DC2477321100FD20ED /* MessagesController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197DA2477321000FD20ED /* MessagesController.swift */; };
 		23E197DD2477321100FD20ED /* ChatController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 23E197DB2477321100FD20ED /* ChatController.swift */; };
+		925FF03D25DCB0EE00D943D9 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 925FF03C25DCB0EE00D943D9 /* GoogleService-Info.plist */; };
 		C66142E520512EF820B8D4B5 /* Pods_TinderTutorial.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1819DF16E6E9035E323576A4 /* Pods_TinderTutorial.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		08B1B3DB8A6B45A6376B72DF /* Pods-TinderTutorial.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderTutorial.release.xcconfig"; path = "Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial.release.xcconfig"; sourceTree = "<group>"; };
 		1819DF16E6E9035E323576A4 /* Pods_TinderTutorial.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TinderTutorial.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		1990D64125DCA7310062113E /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../GoogleService-Info.plist"; sourceTree = "<group>"; };
 		2317E970246523F800A78EC4 /* ProfileController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileController.swift; sourceTree = "<group>"; };
 		2317E9722465270700A78EC4 /* ProfileCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileCell.swift; sourceTree = "<group>"; };
 		2317E97424652CA600A78EC4 /* ProfileViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewModel.swift; sourceTree = "<group>"; };
@@ -111,6 +110,7 @@
 		23E197D7247731ED00FD20ED /* ChatViewModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
 		23E197DA2477321000FD20ED /* MessagesController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MessagesController.swift; sourceTree = "<group>"; };
 		23E197DB2477321100FD20ED /* ChatController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatController.swift; sourceTree = "<group>"; };
+		925FF03C25DCB0EE00D943D9 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		F3E938340904A56DBBC8063E /* Pods-TinderTutorial.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TinderTutorial.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -157,8 +157,8 @@
 				233CF455245B9AB800B50F6B /* SceneDelegate.swift */,
 				233CF459245B9AB800B50F6B /* Main.storyboard */,
 				233CF45C245B9ABA00B50F6B /* Assets.xcassets */,
+				925FF03C25DCB0EE00D943D9 /* GoogleService-Info.plist */,
 				233CF45E245B9ABA00B50F6B /* LaunchScreen.storyboard */,
-				1990D64125DCA7310062113E /* GoogleService-Info.plist */,
 				233CF461245B9ABA00B50F6B /* Info.plist */,
 			);
 			path = TinderTutorial;
@@ -390,9 +390,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				233CF460245B9ABA00B50F6B /* LaunchScreen.storyboard in Resources */,
-				1990D64225DCA7310062113E /* GoogleService-Info.plist in Resources */,
 				233CF45D245B9ABA00B50F6B /* Assets.xcassets in Resources */,
 				233CF45B245B9AB800B50F6B /* Main.storyboard in Resources */,
+				925FF03D25DCB0EE00D943D9 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -427,38 +427,15 @@
 			files = (
 			);
 			inputFileListPaths = (
-			);
-			inputPaths = (
-				"${SRCROOT}/Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/BoringSSL-GRPC/openssl_grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/GTMSessionFetcher/GTMSessionFetcher.framework",
-				"${BUILT_PRODUCTS_DIR}/GoogleUtilities/GoogleUtilities.framework",
-				"${BUILT_PRODUCTS_DIR}/JGProgressHUD/JGProgressHUD.framework",
-				"${BUILT_PRODUCTS_DIR}/Protobuf/Protobuf.framework",
-				"${BUILT_PRODUCTS_DIR}/SDWebImage/SDWebImage.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-C++/grpcpp.framework",
-				"${BUILT_PRODUCTS_DIR}/gRPC-Core/grpc.framework",
-				"${BUILT_PRODUCTS_DIR}/leveldb-library/leveldb.framework",
-				"${BUILT_PRODUCTS_DIR}/nanopb/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputFileListPaths = (
-			);
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/openssl_grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GTMSessionFetcher.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/GoogleUtilities.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/JGProgressHUD.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Protobuf.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SDWebImage.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpcpp.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/grpc.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/leveldb.framework",
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/nanopb.framework",
+				"${PODS_ROOT}/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks.sh\"\n";
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TinderTutorial/Pods-TinderTutorial-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
 		};
 /* End PBXShellScriptBuildPhase section */

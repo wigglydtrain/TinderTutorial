@@ -13,7 +13,7 @@ struct AuthCredentials {
     let email: String
     let password: String
     let fullname: String
-    let profileImage: UIImage
+  //  let profileImage: UIImage
 }
 
 struct AuthService {
@@ -26,7 +26,7 @@ struct AuthService {
     static func registerUser(withCredentials credentials: AuthCredentials,
                              completion: @escaping((Error?) -> Void)) {
         
-        Service.uploadImage(image: credentials.profileImage) { imageUrl in
+    //    Service.uploadImage(image: credentials.profileImage) { imageUrl in
             Auth.auth().createUser(withEmail: credentials.email, password: credentials.password) { (result, error) in
                 if let error = error {
                     print("DEBUG: Error signing user up \(error.localizedDescription)")
@@ -37,7 +37,7 @@ struct AuthService {
                 
                 let data = ["email": credentials.email,
                             "fullname": credentials.fullname,
-                            "imageURLs": [imageUrl],
+                    //        "imageURLs": [imageUrl],
                             "uid": uid,
                             "age": 18] as [String : Any]
                 
@@ -45,4 +45,4 @@ struct AuthService {
             }
         }
     }
-}
+//}
